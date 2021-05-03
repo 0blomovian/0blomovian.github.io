@@ -10,7 +10,7 @@
   
   <body>
     <h1>Processing test</h1>
-    <p>...</p>
+    <p>a simple circle sample :)</p>
     
     <script>
     
@@ -19,14 +19,20 @@
 
       function setup() {
         createCanvas(400, 400);
-        background(220);
       }
 
       function draw() {
-        background(220);
+        background(240, 240, 60, 20);
+
         let size = sin(counter)*range;
+        let size2 = sin(counter+2)*range;
+        fill(255, 255, 255, 50);
+        stroke(0);
+        strokeWeight(15);
         ellipse(width/2, height/2, size, size);
-        counter += 0.03;
+        stroke(70, 225, 70);
+        ellipse(width/2, height/2, size2, size2);
+        counter += 0.015;
       }
 
     </script>
